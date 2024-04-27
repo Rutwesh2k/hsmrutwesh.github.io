@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Healthcare System Management</h1>
+    </header>
+    <main>
+        <section id="patient-form">
+            <h2>Add Patient</h2>
+            <form>
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="date" id="dateOfBirth" required>
+                <select id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input type="text" id="contactNumber" placeholder="Contact Number">
+                <textarea id="address" placeholder="Address"></textarea>
+                <textarea id="medicalHistory" placeholder="Medical History"></textarea>
+                <button type="button" onclick="addPatient()">Add Patient</button>
+            </form>
+        </section>
+        <section id="patient-list">
+            <h2>Patients</h2>
+            <ul id="patients">
+                <!-- Patients will be listed here -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
